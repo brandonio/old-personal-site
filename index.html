@@ -1,53 +1,330 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-<body>
-Hello, World!<br>
-Welcome to my website.<br>
-I am Brandon Berookhim.<br>
-<img src="https://lh4.googleusercontent.com/-W-NojXiNkcQ/U41mn617jCI/AAAAAAAANtM/
-A97Ep6r5v4E/w725-h715-no/2014-05-17" alt="My Gravatar" style="width:270px;height:270px"><br>
-I am located in Los Angeles, California.<br>
-I am a senior at University High School.<br><br>
+<!DOCTYPE html>
+<html lang="en">
+    <head><link type="text/css" rel="stylesheet" href="stylesheet.css"/><a name="top"></a>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <title>Brandonio</title>
+        <meta name="generator" content="Bootply" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
-<i>Check out some of my projects!</i><br>
+        <!-- CSS code from Bootply.com editor -->
+        
+        <style type="text/css">
+            /* -- custom css for Bootstrap 3.x --*/
 
-<a href="https://itunes.apple.com/us/app/lumboard/id923061413?mt=8">
-<strong>Lumboard</strong></a> - The main purpose of Lumboard is to help users text more<br>
-quickly and easily. It provides the comfort of spelling out words that<br>
-are usually shortened, all with the tap of one key. The keyboard's design<br>
-was inspired by Matias Duarte's Material Design. This application was<br>
-built at the University of Waterloo at Hack The North.<br>
-<img src="http://puu.sh/eelQB/744570ba4c.png" alt="Lumboard" style="width:250px;height:125px">
-<br><br>
+/* move special fonts to HTML head for better performance */
+@import url(http://fonts.googleapis.com/css?family=Voltaire);
 
-<a href="https://github.com/brandonio/NASA-Telemetry-Filter"><strong>DSAC Telemetry Filter
-</strong></a> - This program is used to filter out data packets<br>
-from the Deep Space Atomic Clock that fit into a user-selected range. It<br>
-then prints out these packets to a spreadsheet. I wrote this as I learned to<br>
-code during my internship at the Jet Propulsion Laboratory as part of its<br>
-Summer High School Internship Program under NASA's Minority<br>
-University Research and Education Program.<br><br>
+html,
+body {
+  height: 90%;
+  width: 100%;
+  font-family:Arial,sans-serif;
+}
 
-<a href="https://www.github.com/brandonio">GitHub</a> &#160; &#160; 
+/* fix bs3 horizontal scrollbar bug */
+.row { margin: 0; padding: 0 }
+
+
+/* use special fonts in certain elements */
+h1,h2,h3,h4,.lead,.btn,.navbar a {
+  text-transform:uppercase;
+  font-family:'Voltaire',Arial,sans-serif;
+  letter-spacing:2px;
+}
+
+h1 {
+  font-size:50px;
+}
+
+/* make images gray */
+img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+.icon-bar {
+   background-color:#6cff6c;
+}
+
+.scroll-down a, .scroll-top a {
+   color: #6cff6c; //green
+}
+
+.scroll-down {
+   position:fixed;
+   bottom:0%;
+   right:0%;
+   color:#f9f9f9;
+}
+
+.scroll-top {
+  background-color:#dbdbdb;
+}
+
+.vert {
+  vertical-align: middle;
+  width:100%;
+  padding-top:5%;
+  text-align:center;
+}
+
+.header .btn-lg {
+   font-size:28px;
+   border-color:#eeeeee;
+   padding:25px;
+   background-color:transparent;
+   color:#ffffff;
+}
+
+.header .btn-lg:hover {
+   background-color:#eeeeee;
+   color:#777777;
+}
+
+.navbar a {
+  color:#fff;
+  font-size:14px;
+}
+
+.navbar-bold.affix {
+  background-color:#4169e1 ;
+}
+
+.navbar-bold {
+  background-color:#f68076;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.navbar-bold li a:hover, .navbar-bold li.active {
+  background-color:#4169e1 ;
+}
+
+    
+.header h1 {
+  font-size:80px;
+  -webkit-text-stroke: 1px rgba(f,f,f,0.1);
+  color:#1e90ff;
+  color:#fff;
+  margin-left:-5px;
+  margin-bottom:5px;
+  text-transform:uppercase;
+}
+
+.header .lead {
+  color:#1e90ff;
+  font-size:25px;
+}
+
+.header {
+  height: 80%;
+  background: #4169e1 url('http://www.bootply.com/assets/example/pt_topo_l.png') repeat center center fixed;
+}
+
+/* use alt in navbar and header for different color */
+
+.alt {
+  background-color: #6cff6c; //green
+}
+
+.alt .lead {
+  color: #3B0496; //Hello World
+}
+
+.alt.affix {
+  background-color:#6cff6c;
+}
+
+.alt li a:hover, .alt li.active {
+  background-color:#4169e1;
+}
+
+
+
+.blurb {
+  padding: 90px 0;
+  background-color:#fefefe;
+}
+
+.blurb .panel {
+  background-color:transparent;
+}
+
+.bright {
+  background: #dbdbdb url('http://www.bootply.com/assets/example/pt_topo.png') repeat center center fixed; 
+  color:#777;
+}
+
+.featurette {
+  background: #4169e1;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.featurette-item {
+  margin-bottom: 15px;
+}
+
+.featurette-item > i {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+.featurette-item > i:hover {
+  font-size: 68px;
+}
+
+.callout {
+  color: #ffffff;
+  padding-top:0%;
+  height: 100%;
+  width: 100%;
+  background: url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.gallery {
+  padding: 50px 0;
+}
+
+.call-to-action {
+  background: #eeeeee;
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px 0;
+}
+
+footer {
+  padding: 100px 0;
+}
+
+/* -- end custom css for Bootstrap 3.x --*/
+
+        </style>
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body>
+        
+        
+
+
+<div class="header alt vert">
+  <div class="container">
+    <center><a href="https://www.github.com/brandonio">GitHub</a> &#160; &#160; 
 <a href="https://www.challengepost.com/brandonio">Challenge Post</a>  &#160; &#160;
 <a href="https://www.twitter.com/branberookhim">Twitter</a> &#160; &#160; 
 <a href="https://www.plus.google.com/+BrandonBerookhim/posts">Google+</a> &#160; &#160; 
 <a href="https://www.linkedin.com/pub/brandon-berookhim/72/877/561">LinkedIn</a> &#160; &#160; 
-<a href="mailto:me@brandonb.me">Email</a>
+<a href="mailto:me@brandonb.me">Email</a> </center> 
+    <h2>Hello, my name is Brandon Berookhim.</h2>
+      <p class="lead">Hello, World! </p>
+      
+      <h1 style="text-align:center"><img src="https://lh4.googleusercontent.com/-W-NojXiNkcQ/U41mn617jCI/AAAAAAAANtM/
+A97Ep6r5v4E/w725-h715-no/2014-05-17" alt="My Gravatar" style= width:270px;height:270px">
+  </div>
+</div>
+<div class="navbar navbar-fixed-top alt" data-spy="affix" data-offset-top="1000">
+  <div class="container">
+    <div class="navbar-header">
+      <center><br>
+I am located in Los Angeles, California.<br>
+I am a senior at University High School.<br><br>
+
+
+<i>Check out some of my projects!</i><br></a>&nbsp;&nbsp;</center>
+      
+    </div>
+   </div>
+</div>
+
+
+
+        
+
+<h1><center><a href="https://github.com/brandonio/NASA-Telemetry-Filter"><strong>DSAC Telemetry Filter
+</strong></a></center></h1>
+     
+    </div>
+    <div class="para">
+    <p> 
+ <center>This program is used to filter out data packets<br>
+from the Deep Space Atomic Clock that fit into a user-selected range. It<br>
+then prints out these packets to a spreadsheet. I wrote this as I learned to<br>
+code during my internship at the Jet Propulsion Laboratory as part of its<br>
+Summer High School Internship Program under NASA's Minority<br>
+University Research and Education Program.<br><br></li>
+</center></p>
+
+      
+      <div class="col-md-5">
+        <h1 class="pull-right"><i class="icon-mobile-phone icon-3x"></i> <i class="icon-tablet icon-3x"></i> <i class="icon-laptop icon-3x"></i></h1>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="featurette" id="sec2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+
+        <div class= "class">
+    <center><h1> <a href="https://itunes.apple.com/us/app/lumboard/id923061413?mt=8">
+<strong>Lumboard</strong></a></h1>
+        
+
+        </a> The main purpose of Lumboard is to help users text more<br>
+quickly and easily. It provides the comfort of spelling out words that<br>
+are usually shortened, all with the tap of one key. The keyboard's design<br>
+was inspired by Matias Duarte's Material Design. This application was<br>
+built at the University of Waterloo at Hack The North.<br>
+<br>
+<img src="http://puu.sh/eelQB/744570ba4c.png" alt="Lumboard" style="width:250px;height:125px"></br>
+<br><br></center>
+
+
+    
+      </div>
+    </div>
+<br>
+      
+
+        <center><a href='#top'style="color:black">Back to Top</a></center>
+    </body>
+
+
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-58315661-1', 'auto');
   ga('send', 'pageview');
   </script>
   
 </body>
+</center>
 </head>
 </html>
-
-
